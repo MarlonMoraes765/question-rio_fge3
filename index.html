@@ -73,7 +73,9 @@ button{
 </div>
 
 <script>
+
 let perguntas = [
+
 {q:"Administração é o processo de:",a:["Planejar, organizar, dirigir e controlar recursos","Apenas executar tarefas","Somente controlar pessoas","Reduzir custos"],c:0},
 {q:"As organizações podem ser definidas como:",a:["Agrupamentos de pessoas que buscam objetivos comuns","Apenas empresas lucrativas","Somente órgãos públicos","Grupos sem finalidade"],c:0},
 {q:"Planejamento tem como foco principal:",a:["Definir objetivos e estratégias","Executar atividades","Controlar resultados","Motivar pessoas"],c:0},
@@ -83,7 +85,47 @@ let perguntas = [
 {q:"A função organização envolve:",a:["Estruturar recursos e atividades","Controlar resultados","Motivar equipes","Criar estratégias"],c:0},
 {q:"A função direção está ligada a:",a:["Liderança e motivação","Controle financeiro","Planejamento estratégico","Organização estrutural"],c:0},
 {q:"Controle consiste em:",a:["Comparar resultados com metas","Criar estratégias","Motivar pessoas","Executar tarefas"],c:0},
-{q:"Stakeholders são:",a:["Grupos ou indivíduos afetados pela organização","Apenas acionistas","Somente clientes","Somente funcionários"],c:0}
+{q:"Stakeholders são:",a:["Grupos ou indivíduos afetados pela organização","Apenas acionistas","Somente clientes","Somente funcionários"],c:0},
+
+{q:"O nível estratégico é responsável por:",a:["Definir objetivos e estratégias","Executar tarefas","Controlar rotinas","Supervisionar produção"],c:0},
+{q:"O nível tático atua principalmente:",a:["Na coordenação das áreas","Na execução operacional","No planejamento estratégico","Na auditoria"],c:0},
+{q:"O nível operacional realiza:",a:["As atividades do dia a dia","O planejamento","A tomada de decisões estratégicas","O controle financeiro"],c:0},
+{q:"Marketing tem como objetivo:",a:["Atender às necessidades do mercado","Controlar custos","Produzir bens","Gerenciar pessoas"],c:0},
+{q:"A área financeira busca:",a:["Sustentabilidade econômica","Produção eficiente","Satisfação dos clientes","Gestão de pessoas"],c:0},
+{q:"Recursos Humanos atua principalmente:",a:["Na gestão de pessoas","Na produção","No marketing","No controle financeiro"],c:0},
+{q:"Estrutura organizacional define:",a:["Autoridade e responsabilidades","Salários","Lucros","Tecnologia"],c:0},
+{q:"Organograma é:",a:["Representação gráfica da estrutura","Planejamento estratégico","Relatório financeiro","Ferramenta de marketing"],c:0},
+{q:"Departamentalização funcional baseia-se:",a:["Nas funções organizacionais","Nos clientes","Nos produtos","Na região"],c:0},
+{q:"Cultura organizacional envolve:",a:["Valores e crenças compartilhadas","Apenas normas formais","Somente tecnologia","Apenas metas financeiras"],c:0},
+
+{q:"Liderança eficaz está relacionada a:",a:["Influenciar pessoas","Centralizar poder","Controlar rigidamente","Aplicar punições"],c:0},
+{q:"Processos organizacionais são:",a:["Conjunto de atividades interligadas","Apenas tarefas isoladas","Normas legais","Relatórios financeiros"],c:0},
+{q:"Ambiente externo inclui:",a:["Fatores econômicos, políticos e sociais","Apenas funcionários","Somente máquinas","Apenas clientes"],c:0},
+{q:"Ambiente interno envolve:",a:["Pessoas, recursos e estrutura","Concorrência","Economia","Legislação"],c:0},
+{q:"Missão organizacional define:",a:["A razão de existir da organização","Metas financeiras","Estrutura hierárquica","Salários"],c:0},
+{q:"Visão organizacional representa:",a:["Onde a empresa quer chegar","Resultados atuais","Estrutura interna","Processos operacionais"],c:0},
+{q:"Valores organizacionais orientam:",a:["Comportamentos e decisões","Lucros","Tecnologia","Estratégias financeiras"],c:0},
+{q:"Tomada de decisão envolve:",a:["Escolher entre alternativas","Apenas intuição","Apenas experiência","Somente normas"],c:0},
+{q:"Planejamento estratégico foca no:",a:["Longo prazo","Curto prazo","Dia a dia","Controle operacional"],c:0},
+{q:"Planejamento operacional refere-se a:",a:["Atividades rotineiras","Estratégias globais","Missão","Visão"],c:0},
+
+{q:"Inovação organizacional busca:",a:["Melhoria contínua","Manter padrões antigos","Evitar mudanças","Reduzir pessoas"],c:0},
+{q:"Competitividade depende de:",a:["Estratégia e adaptação","Isolamento","Controle rígido","Produção artesanal"],c:0},
+{q:"Descentralização ocorre quando:",a:["Decisões são distribuídas","Tudo é decidido no topo","Não há hierarquia","Não há controle"],c:0},
+{q:"Centralização caracteriza-se por:",a:["Decisões concentradas na alta gestão","Autonomia total","Falta de controle","Ausência de hierarquia"],c:0},
+{q:"Comunicação organizacional eficaz:",a:["Facilita o alcance de objetivos","Gera conflitos","Reduz produtividade","Isola setores"],c:0},
+{q:"Ética empresarial orienta:",a:["Condutas responsáveis","Apenas lucros","Apenas resultados","Apenas estratégias"],c:0},
+{q:"Responsabilidade social envolve:",a:["Compromisso com a sociedade","Somente lucro","Apenas marketing","Redução de custos"],c:0},
+{q:"Gestão contemporânea valoriza:",a:["Flexibilidade e adaptação","Rigidez estrutural","Centralização extrema","Rotinas fixas"],c:0},
+{q:"Eficiência operacional significa:",a:["Produzir mais com menos recursos","Aumentar custos","Reduzir qualidade","Evitar controle"],c:0},
+{q:"Eficácia estratégica significa:",a:["Alcançar metas estabelecidas","Reduzir produção","Eliminar planejamento","Ignorar concorrência"],c:0},
+
+{q:"Análise SWOT avalia:",a:["Forças, fraquezas, oportunidades e ameaças","Somente forças","Apenas oportunidades","Somente ameaças"],c:0},
+{q:"Clima organizacional influencia:",a:["Satisfação e desempenho","Apenas lucros","Tecnologia","Estrutura física"],c:0},
+{q:"Capital intelectual representa:",a:["Conhecimento organizacional","Somente dinheiro","Equipamentos","Instalações"],c:0},
+{q:"Planejamento tático desdobra:",a:["Estratégias em ações específicas","Missão organizacional","Valores","Lucros"],c:0},
+{q:"Planejamento estratégico considera:",a:["Ambiente interno e externo","Somente ambiente interno","Apenas concorrência","Somente finanças"],c:0}
+
 ];
 
 let respostas = new Array(perguntas.length).fill(null);
