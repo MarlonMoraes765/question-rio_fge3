@@ -83,55 +83,32 @@ let perguntas = [
 {q:"A função organização envolve:",a:["Estruturar recursos e atividades","Controlar resultados","Motivar equipes","Criar estratégias"],c:0},
 {q:"A função direção está ligada a:",a:["Liderança e motivação","Controle financeiro","Planejamento estratégico","Organização estrutural"],c:0},
 {q:"Controle consiste em:",a:["Comparar resultados com metas","Criar estratégias","Motivar pessoas","Executar tarefas"],c:0},
-{q:"Stakeholders são:",a:["Grupos ou indivíduos afetados pela organização","Apenas acionistas","Somente clientes","Somente funcionários"],c:0},
-
-{q:"O nível estratégico é responsável por:",a:["Definir objetivos e estratégias","Executar tarefas","Controlar rotinas","Supervisionar produção"],c:0},
-{q:"O nível tático atua principalmente:",a:["Na coordenação das áreas","Na execução operacional","No planejamento estratégico","Na auditoria"],c:0},
-{q:"O nível operacional realiza:",a:["As atividades do dia a dia","O planejamento","A tomada de decisões estratégicas","O controle financeiro"],c:0},
-{q:"A área de operações é responsável por:",a:["Transformar insumos em produtos ou serviços","Gerenciar pessoas","Vender produtos","Controlar finanças"],c:0},
-{q:"Marketing tem como objetivo:",a:["Atender às necessidades do mercado","Controlar custos","Produzir bens","Gerenciar pessoas"],c:0},
-
-{q:"A área financeira busca:",a:["Sustentabilidade econômica","Produção eficiente","Satisfação dos clientes","Gestão de pessoas"],c:0},
-{q:"Recursos Humanos atua principalmente:",a:["Na gestão de pessoas","Na produção","No marketing","No controle financeiro"],c:0},
-{q:"Estrutura organizacional define:",a:["Autoridade e responsabilidades","Salários","Lucros","Tecnologia"],c:0},
-{q:"Organograma é:",a:["Representação gráfica da estrutura","Planejamento estratégico","Relatório financeiro","Ferramenta de marketing"],c:0},
-{q:"Departamentalização funcional baseia-se:",a:["Nas funções organizacionais","Nos clientes","Nos produtos","Na região"],c:0},
-
-{q:"A estrutura funcional favorece:",a:["Especialização","Descentralização total","Autonomia irrestrita","Redução do controle"],c:0},
-{q:"Mudança organizacional é:",a:["Introdução de novas ideias e processos","Apenas demissão","Mudança de prédio","Troca de gestores"],c:0},
-{q:"A globalização caracteriza-se por:",a:["Integração econômica e cultural","Isolamento dos mercados","Produção artesanal","Redução da concorrência"],c:0},
-{q:"Tecnologia da informação contribui para:",a:["Agilidade e competitividade","Isolamento organizacional","Redução do conhecimento","Centralização extrema"],c:0},
-{q:"Cultura organizacional envolve:",a:["Valores e crenças compartilhadas","Apenas normas formais","Somente tecnologia","Apenas metas financeiras"],c:0},
-
-{q:"Liderança eficaz está relacionada a:",a:["Influenciar pessoas","Centralizar poder","Controlar rigidamente","Aplicar punições"],c:0},
-{q:"Processos organizacionais são:",a:["Conjunto de atividades interligadas","Apenas tarefas isoladas","Normas legais","Relatórios financeiros"],c:0},
-{q:"A administração moderna valoriza:",a:["Capital intelectual","Apenas capital financeiro","Produção artesanal","Controle rígido"],c:0},
-{q:"Ambiente externo inclui:",a:["Fatores econômicos, políticos e sociais","Apenas funcionários","Somente máquinas","Apenas clientes"],c:0},
-{q:"Ambiente interno envolve:",a:["Pessoas, recursos e estrutura","Concorrência","Economia","Legislação"],c:0},
-
-{q:"A missão organizacional define:",a:["A razão de existir da organização","Metas financeiras","Estrutura hierárquica","Salários"],c:0},
-{q:"Visão organizacional representa:",a:["Onde a empresa quer chegar","Resultados atuais","Estrutura interna","Processos operacionais"],c:0},
-{q:"Valores organizacionais orientam:",a:["Comportamentos e decisões","Lucros","Tecnologia","Estratégias financeiras"],c:0},
-{q:"A tomada de decisão envolve:",a:["Escolher entre alternativas","Apenas intuição","Apenas experiência","Somente normas"],c:0},
-{q:"Planejamento estratégico foca no:",a:["Longo prazo","Curto prazo","Dia a dia","Controle operacional"],c:0},
-
-{q:"Planejamento tático é:",a:["Desdobramento do planejamento estratégico","Execução direta","Controle financeiro","Auditoria"],c:0},
-{q:"Planejamento operacional refere-se a:",a:["Atividades rotineiras","Estratégias globais","Missão","Visão"],c:0},
-{q:"A inovação organizacional busca:",a:["Melhoria contínua","Manter padrões antigos","Evitar mudanças","Reduzir pessoas"],c:0},
-{q:"A competitividade depende de:",a:["Estratégia e adaptação","Isolamento","Controle rígido","Produção artesanal"],c:0},
-{q:"A gestão contemporânea valoriza:",a:["Flexibilidade e adaptação","Rigidez estrutural","Centralização extrema","Rotinas fixas"],c:0},
-
-{q:"A descentralização ocorre quando:",a:["Decisões são distribuídas","Tudo é decidido no topo","Não há hierarquia","Não há controle"],c:0},
-{q:"Centralização caracteriza-se por:",a:["Decisões concentradas na alta gestão","Autonomia total","Falta de controle","Ausência de hierarquia"],c:0},
-{q:"A comunicação organizacional eficaz:",a:["Facilita o alcance de objetivos","Gera conflitos","Reduz produtividade","Isola setores"],c:0},
-{q:"A ética empresarial orienta:",a:["Condutas responsáveis","Apenas lucros","Apenas resultados","Apenas estratégias"],c:0},
-{q:"Responsabilidade social envolve:",a:["Compromisso com a sociedade","Somente lucro","Apenas marketing","Redução de custos"],c:0}
+{q:"Stakeholders são:",a:["Grupos ou indivíduos afetados pela organização","Apenas acionistas","Somente clientes","Somente funcionários"],c:0}
 ];
 
 let respostas = new Array(perguntas.length).fill(null);
 
 function embaralhar(arr){
-    return arr.map(v=>({v, s:Math.random()})).sort((a,b)=>a.s-b.s).map(o=>o.v);
+    return arr.map(v=>({v, s:Math.random()}))
+              .sort((a,b)=>a.s-b.s)
+              .map(o=>o.v);
+}
+
+function prepararPerguntas(){
+    perguntas = embaralhar(perguntas).map(p => {
+        let alternativas = embaralhar(
+            p.a.map((texto, idx) => ({
+                texto,
+                correta: idx === p.c
+            }))
+        );
+        return {
+            q: p.q,
+            a: alternativas.map(a => a.texto),
+            c: alternativas.findIndex(a => a.correta)
+        };
+    });
+    respostas = new Array(perguntas.length).fill(null);
 }
 
 function render(){
@@ -156,9 +133,16 @@ function render(){
             };
             label.appendChild(input);
             label.append(" "+alt);
+
             if(respostas[i]!==null){
-                if(j===p.c && respostas[i]===j){label.className="correct";div.classList.add("correct");}
-                if(j===respostas[i] && j!==p.c){label.className="wrong";div.classList.add("wrong");}
+                if(j===p.c && respostas[i]===j){
+                    label.className="correct";
+                    div.classList.add("correct");
+                }
+                if(j===respostas[i] && j!==p.c){
+                    label.className="wrong";
+                    div.classList.add("wrong");
+                }
             }
             div.appendChild(label);
         });
@@ -167,19 +151,21 @@ function render(){
 }
 
 function sortear(){
-    perguntas=embaralhar(perguntas);
-    respostas=new Array(perguntas.length).fill(null);
+    prepararPerguntas();
     document.getElementById("resultado").innerHTML="";
     render();
 }
 
 function finalizar(){
     let pontos=0;
-    respostas.forEach((r,i)=>{if(r===perguntas[i].c)pontos++;});
+    respostas.forEach((r,i)=>{
+        if(r===perguntas[i].c) pontos++;
+    });
     document.getElementById("resultado").innerHTML=
     `Você acertou ${pontos} de ${perguntas.length} questões.`;
 }
 
+prepararPerguntas();
 render();
 </script>
 </body>
